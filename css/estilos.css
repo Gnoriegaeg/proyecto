@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif
+}
+
+h2{
+    color: #e4ac36;
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        font-size: 2.5rem;
+        text-align: center;
+        padding: 20px;
+}
+
+.fuenteNegrita{
+    font-weight: 700;
+}
+
+/*Header*/
+.header{
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #141414e0;
+    /*Atributos para que el header quede fijo al hacer scroll*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    img{
+        width: 100px;
+    }
+    nav{
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                margin-right: 20px;
+                a{
+                    color: #e4ac36;
+                    text-decoration: none;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+/*Main index*/
+.main{
+    background-image: linear-gradient(to right top, #b7e9aa, #9bd3a5, #84bc9e, #72a594, #668e86);
+}
+
+/*Section1*/
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    background-image: url("../assets/img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    h1{
+        color: #ffffff;
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+/*Section Productos*/
+.imgMain {
+    text-align: center;
+}
+.contenedoresFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.flexItem {
+    text-align: center;
+    h3{
+        color: #000000;
+        font-size: 2rem;
+        text-align: center;
+        padding: 15px;
+    }
+    img {
+        width: 320px;
+        height: 320px;
+        object-fit: contain;
+        padding: 10px;
+        transition: transform 0.3s ease;
+        background-color: #ffffff;
+        border-radius: 10px;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+/*Section Galeria*/
+.galeria {
+    height: 90vh;
+    a{
+        text-decoration: none;
+    }
+}
+.contenedorGaleria {
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.galeriaItem {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    img{
+        width: 280px;
+        height: 280px;
+        object-fit: contain;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+    h3{
+        font-size: 18px;
+        margin: 10px 0;
+        color: #333;
+    }
+    h4{
+        font-size: 16px;
+        color: #00ff66;
+        margin: 5px 0;
+    }
+}
+/*Section nosotros*/
+.nosotros{
+    text-align: center;
+    .fotoYMapa{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        iframe{
+            height: 428px;
+            width: 570px;
+        }
+    }
+}
+
+/*Section Consultas*/
+.consulta{
+    text-align: center;
+    height: 40vh;
+    h2{
+        padding: 50px;
+    }
+    a{
+        color: #136557;
+        text-decoration: none;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        font-size: 1.5em;
+    }
+}
+
+/*Section Marcas*/
+.marcas{
+    .marcasImg{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    img{
+        padding: 10px;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+/*Footer*/
+.footer{
+    color: #cfcfc7;
+    background-color: #141414;
+    ul{
+        list-style: none;
+    }
+    a{
+        color: #e4ac36;
+        text-decoration: none;
+        .fa-facebook{
+            color: #4267B2;
+            font-size: 64px;
+        }
+        .fa-instagram{
+            color: #E1306C;
+            font-size: 64px;
+        }
+        .fa-whatsapp{
+            color: #25D366;
+            font-size: 64px;
+            /*Atributos para hacer el icono flotante*/
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+}
+.contenidoFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenidoFooterDos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/*PRODUCTOS*/
+.galeriaGrid{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr 1fr;
+    grid-template-areas:  "imgSwitch imgPs5"
+                          "imgXbox imgPs5"
+                          "imgFc imgPs5"
+                          "imgFc imgCamo";
+    gap: 30px;
+    .item1{
+        grid-area: imgSwitch;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .item2{
+        grid-area: imgPs5;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .item3{
+        grid-area: imgXbox;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .item4{
+        grid-area: imgFc;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .item5{
+        grid-area: imgCamo;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
