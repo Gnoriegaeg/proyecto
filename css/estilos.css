@@ -13,10 +13,10 @@ h1,h2,h3,h4,h5,h6{
 
 h2{
     color: #e4ac36;
-        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-        font-size: 2.5rem;
-        text-align: center;
-        padding: 20px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 20px;
 }
 
 .fuenteNegrita{
@@ -232,6 +232,13 @@ h2{
 }
 
 /*PRODUCTOS*/
+.h1Productos{
+    color: #e4ac36;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 20px;
+}
 .galeriaGrid{
     width: 90%;
     margin: 0 auto;
@@ -273,4 +280,22 @@ h2{
         height: 100%;
         object-fit: cover;
     }
+}
+/*CONTACTO*/
+.h1Contacto{
+    color: #e4ac36;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 20px;
+}
+.contactoForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    padding: 20px;
 }
