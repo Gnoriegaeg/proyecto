@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function mostrarCarrito(){
     tablaCarrito.innerHTML = "";
-    let total = 0;
     if(carrito.length){
+        let total = 0;
         carrito.forEach((producto, index) => {
             const fila = document.createElement("tr");
             fila.innerHTML = `
